@@ -1,0 +1,109 @@
+/* Importação da fonte externa: Raleway*/
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Header da Home */
+
+.container-cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho {
+    padding: 1em;
+    width: 100%;
+    background-color: #000000b0;
+}
+
+.logo-img {
+    width: 12vh;
+}
+
+/* Listas do Header */
+
+.div-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    align-items: center;
+}
+
+.item-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    border-radius: 0.5px;
+}
+
+.item-header:hover {
+    color: #2A89DC;
+    transition: all 450ms ease-in-out;
+}
+
+/* Conteudo Principal */
+
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.informacoes-icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.titulo-conteudo {
+    font-family: 'Raleway', sans-serif;
+}
+
+.lista-conteudo {
+    list-style: none;
+}
+
+.container-listas {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Segunda Parte do conteúdo */
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+
+.conteudo-secundario h1 {
+    font-family: 'Raleway', sans-serif;
+}
