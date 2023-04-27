@@ -1,9 +1,19 @@
 /* Importação da fonte externa: Raleway*/
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/raleway/v22/1Ptrg8zYS_SKggPNwE4t8g.woff2') format('woff2');
+}
+
 * {
     box-sizing: border-box;
 }
+
+/* Configurações Padrão */
 
 body {
     display: flex;
@@ -101,9 +111,116 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 5em;
+    margin-top: 9em;
 }
 
 .conteudo-secundario h1 {
     font-family: 'Raleway', sans-serif;
 }
+
+.container-imagens {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin-top: 5em;
+}
+
+.container-imagens h2 {
+    color: #2A89DC;
+}
+
+.container-imagens span {
+    color: #2A89DC;
+    font-weight: bold;
+}
+
+/* Formulário  */
+
+.form-contato {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* largura máxima de 600 pixels */
+    padding: 4em;
+    height: 100%;
+    border-radius: 5px;
+    color: #2A89DC;
+    background-color: #F7F7F7;
+}
+
+/* Quando o usuário clicar no formulário */
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    border: 3px solid #2A89DC;
+    border-radius: 5px;
+    background: none;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 3px 6px 0px #000;
+}
+
+.form-contato input:focus-within,
+.form-contato textarea:focus-within {
+    box-shadow: 2px 2px 2px #2A89DC;
+}
+
+
+/* Estilo do botão de envio */
+
+.form-contato button[type="submit"] {
+    background-color: #2A89DC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-contato button[type="submit"]:hover {
+    background-color: #1B5B9F;
+}
+
+.banner-footer {
+    background-image: url("../../../public/img/mundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 10em 0 0 0;
+    padding: 5em;
+}
+
+
+
+
+/* Footer */
+
+.rodape {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
