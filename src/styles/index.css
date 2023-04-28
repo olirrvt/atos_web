@@ -109,8 +109,7 @@ body {
     border-radius: 0.5px;
 }
 
-.item-header a:hover,
-.item-header:hover {
+.item-header a:hover {
     color: #2A89DC;
     transition: all 450ms ease-in-out;
 }
