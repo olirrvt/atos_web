@@ -9,8 +9,10 @@
   </head>
   <body>
 
-    <header class="cabecalho">
+    <header id="header-info" class="cabecalho">
+
       <nav>
+        
         <div class="container-cabecalho">
           <div class="div-imagem">
             <img
@@ -23,21 +25,44 @@
           <div class="div-menu">
 
             <ul class="menu-lista">
-              <li class="item-header">Fale Conosco</li>
-              <li class="item-header">Carreira</li>
+
+              <li class="item-header">
+                <a href="#info-rodape">
+                  Fale Conosco
+                </a>
+              </li>
+
+              <li class="item-header">
+                <a href="https://atos.net/pt-br/brasil-atos/vagas-de-emprego-em-ti-atos-brasil">
+                  Carreira
+                </a> 
+              </li>
+
               <li class="item-header">Sobre nós</li>
               <li class="item-header">Galeria</li>
-              <li class="item-header">Redes Sociais</li>
-              <li>
-                <img width="35px" src="https://img.icons8.com/fluency/48/null/geography.png"/>
-              </li>
+
             </ul>
 
             <ul class="menu-lista">
-              <li class="item-header">Indústrias</li>
-              <li class="item-header">Soluções</li>
-              <li class="item-header">Insights & Notícias</li>
-              <li class="item-header">Carreira</li>
+
+              <li class="item-header">
+                  <a href="#industrias">
+                  Indústrias
+                  </a>
+              </li>
+
+              <li class="item-header">
+                <a href="https://atos.net/en/portfolio">
+                  Soluções
+                </a>
+              </li>
+
+              <li class="item-header">
+                <a href="#secao-news">
+                  Insights & Notícias
+                </a>
+              </li>
+
             </ul>
 
           </div>
@@ -51,7 +76,7 @@
 
     <section class="conteudo-principal">
 
-        <div class="container-conteudo">
+        <div id="secao-news" class="container-conteudo">
 
             <h1 class="titulo-conteudo">Soluções de transformação digital para uma jornada bem-sucedida</h1>
 
@@ -90,7 +115,7 @@
 
           <h1>Há mais de 30 anos no Brasil oferecendo consultoria e serviços de TI para a <br> transformação digital de nossos clientes</h1>
 
-          <div class="container-imagens">
+          <div id="industrias" class="container-imagens">
 
                <div>
                   <img src="../public/img/3-atos-sam-br-londrina-center-1-1.png" alt="" width="350px">
@@ -159,12 +184,14 @@
           </form>
     </aside>
 
-    <footer class="rodape">
+    <footer id="info-rodape" class="rodape">
 
         <div class="container-footer">
 
           <div>
-            <img src="../public/img/image-removebg-preview.png" alt="logo-azul" width="100px">
+            <a href="#header-info">
+              <img src="../public/img/image-removebg-preview.png" alt="logo-azul" width="100px">
+            </a>
           </div>
           
           <div>

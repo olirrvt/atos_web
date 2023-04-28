@@ -1,4 +1,5 @@
 /* Importação da fonte externa: Raleway*/
+
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
@@ -9,11 +10,46 @@
     src: url('https://fonts.gstatic.com/s/raleway/v22/1Ptrg8zYS_SKggPNwE4t8g.woff2') format('woff2');
 }
 
+/* Navegar lentamente */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .target-section {
+    scroll-margin-top: 100px;
+    scroll-snap-align: start;
+  }
+  
+  .target-section {
+    scroll-margin-top: 100px;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
+    scroll-snap-type: y mandatory;
+    transition: transform 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .target-section:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+  }
+  
+  .target-section:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: 0;
+  }
+
+
+/* Configurações Padrão */
+
 * {
     box-sizing: border-box;
 }
-
-/* Configurações Padrão */
 
 body {
     display: flex;
@@ -59,6 +95,11 @@ body {
     align-items: center;
 }
 
+.menu-lista a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .item-header {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -68,6 +109,7 @@ body {
     border-radius: 0.5px;
 }
 
+.item-header a:hover,
 .item-header:hover {
     color: #2A89DC;
     transition: all 450ms ease-in-out;
