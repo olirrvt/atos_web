@@ -3,7 +3,7 @@
 Esse é um projeto frontend desenvolvido pela empresa Atos utilizando apenas HTML e CSS.
 O projeto tem como objetivo criar uma página web responsiva e de fácil utilização para os clientes da Atos.
 
-![image](https://user-images.githubusercontent.com/100844800/235007926-ee8d22fb-91e6-402a-8fe9-43798e223c70.png)
+![image](https://user-images.githubusercontent.com/100844800/235232184-dcf972ab-54c8-40e7-9cc7-5063ac2bd2f0.png)
 
 ## Instalação do Live Server 🧠
 
