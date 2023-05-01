@@ -67,8 +67,8 @@
               </li>
 
               <li class="item-header">
-                <a href="#secao-news">
-                  Insights & Notícias
+                <a href="./pages/tabelas.html">
+                  Tabelas & Comparativos
                 </a>
               </li>
 
@@ -188,7 +188,10 @@
 
             <br>
             <br>
-            <button type="submit">Enviar</button>
+
+            <button type="submit" id="enviar-btn">Enviar</button>
+            <br>
+            <div id="mensagem"></div>
 
           </form>
     </aside>
@@ -228,4 +231,19 @@
 
     </footer>
   </body>
+  <script>
+    const enviarBtn = document.getElementById('enviar-btn');
+    const mensagem = document.getElementById('mensagem');
+
+    enviarBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      mensagem.textContent = 'Seus dados foram enviados!';
+      mensagem.style.color = 'green';
+      
+      setTimeout(function() {
+        mensagem.textContent = '';
+      }, 10000);
+    });
+  </script>
 </html>
