@@ -251,24 +251,5 @@
 
   }
 
-    window.addEventListener('load', function() {
-
-      var headerInfo = document.getElementById("header-info");
-      var mensagem = document.createElement("div");
-      mensagem.innerHTML = "Atenção: alguns links te levam para o verdadeiro site da Atos";
-      mensagem.style.color = "red";
-      mensagem.style.fontWeight = "bolder";
-      mensagem.style.textAlign = "center";
-      mensagem.style.padding = "10px";
-      headerInfo.appendChild(mensagem);
-
-      setTimeout(function() {
-        mensagem.style.display = 'block';
-        setTimeout(function() {
-          mensagem.style.display = 'none';
-        }, 5000);
-      }, 5000);
-    });
-
   </script>
 </html>
